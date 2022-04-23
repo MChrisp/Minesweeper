@@ -16,16 +16,24 @@ top_frame = Frame(
     width=settings.top_frame_width,
     height=settings.top_frame_height,
 )
-top_frame.place(x=0, y=0)
+top_frame.place(x=settings.top_frame_x, y=settings.top_frame_y)
 
-side_frame = Frame(
+left_frame = Frame(
     root,
     bg='black',
-    width=settings.side_frame_width,
-    height=settings.side_frame_height
+    width=settings.left_frame_width,
+    height=settings.left_frame_height
 )
 
-side_frame.place(x=0, y=settings.top_frame_height)
+left_frame.place(x=settings.left_frame_x, y=settings.left_frame_y)
+
+center_frame = Frame(
+    bg='green',
+    width=settings.center_frame_width,
+    height=settings.center_frame_height
+)
+
+center_frame.place(x=settings.center_frame_x, y=settings.center_frame_y)
 
 # Run Window
 root.mainloop()  # Window stays open until closed
