@@ -1,5 +1,7 @@
 from tkinter import *
 import settings
+import utils
+
 root = Tk()
 # Override settings of window
 
