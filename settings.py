@@ -20,3 +20,10 @@ center_frame_height = floor(root_height * (1 - top_frame_height_prct)) - center_
 center_frame_width = floor(root_width * (1 - left_frame_width_prct)) - center_frame_boarder
 center_frame_x = left_frame_width + center_frame_boarder
 center_frame_y = top_frame_height + center_frame_boarder
+
+grid_size = 5
+
+button_bd = 2
+button_size_x = floor(center_frame_width / grid_size) - 2 * button_bd - 4
+button_size_y = floor(center_frame_height / grid_size) - 2 * button_bd - 4
+
