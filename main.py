@@ -37,4 +37,3 @@ center_frame.place(x=settings.center_frame_x, y=settings.center_frame_y)
 
 # Run Window
 root.mainloop()  # Window stays open until closed
-
