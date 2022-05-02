@@ -48,6 +48,7 @@ for x in range(settings.grid_size):
             row=y
         )
 
+Cell.randomize_mines()
 
 # Run Window
 root.mainloop()  # Window stays open until closed

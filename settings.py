@@ -1,3 +1,4 @@
+import math
 from math import *
 
 root_width = 1000
@@ -26,4 +27,8 @@ grid_size = 5
 button_bd = 2
 button_size_x = floor(center_frame_width / grid_size) - 2 * button_bd - 4
 button_size_y = floor(center_frame_height / grid_size) - 2 * button_bd - 4
+
+level = 10
+
+mines_count = int(grid_size * (1 + level / 10))
 
