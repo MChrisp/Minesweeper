@@ -2,13 +2,15 @@ from tkinter import *
 import settings
 from cell import Cell
 
+
 root = Tk()
 # Override settings of window
+
 
 root.configure(bg='black')  # Configure can do way more than bg (Background color)
 root.geometry(f'{settings.root_width}x{settings.root_height}')
 root.title("Minesweeper - beta")
-# root.resizable(False, False)
+root.resizable(False, False)
 
 top_frame = Frame(
     root,
